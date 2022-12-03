@@ -1,170 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-  .menu-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    background: #232323;
-    color: #cdcdcd;
-    padding: 20px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-    box-sizing: border-box;
-  }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrosel Giratório - @programador.cs</title>
+    <style>
+        * {
+            font-family: "Verdana", sans-serif;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            letter-spacing: 0px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
+            margin: 0;
+            color: #fff;
+        }
+
+        body {
+            margin: 2rem;
+            background-color: #212123;
+        }
+
+
+        .carrosel {
+            -webkit-perspective: 250px;
+            -moz-perspective: 250px;
+            width: 400px;
+            height: 200px;
+            top: 50px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        @-webkit-keyframes efeitoCarrosel {
+            from {
+                -webkit-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+                -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+                z-index: 10;
+                opacity: 1
+            }
+
+            50% {
+                z-index: -10;
+            }
+
+            to {
+                -webkit-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+                -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+                z-index: 10;
+                opacity: 1
+            }
+        }
+
+        @-moz-keyframes efeitoCarrosel {
+            from {
+                -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+                z-index: 10;
+                opacity: 1
+            }
+
+            50% {
+                z-index: -10;
+            }
+
+            to {
+                -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+                z-index: 10;
+                opacity: 1
+            }
+        }
+
+        .caixa__card {
+            width: 90px;
+            height: 100px;
+            background-color: #442222;
+            position: absolute;
+            display: flex;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            top: 35px;
+            left: 125px;
+            font-size: 9px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+            text-align: center;
+            -webkit-animation-name: efeitoCarrosel;
+            -moz-animation-name: efeitoCarrosel;
+            -webkit-animation-duration: 8s;
+            -moz-animation-duration: 8s;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+        }
+
+        .caixa__card:hover {
+            border: solid #4466cc 3px;
+            box-shadow: 0px 0px 10px #4466cc;
+        }
+
+        .caixa__card.cc__1 {
+            background: linear-gradient(-229deg, #0093E9, #80D0C7);
+            -webkit-animation-delay: -7s;
+            -moz-animation-delay: -7s;
+        }
+
+        .caixa__card.cc__2 {
+
+            background: linear-gradient(-229deg, #00DBDE, #FC00FF);
+            -webkit-animation-delay: -6s;
+            -moz-animation-delay: -6s;
+        }
+
+        .caixa__card.cc__3 {
+
+            background: linear-gradient(-229deg, #50d990, #d4d054);
+            -webkit-animation-delay: -5s;
+            -moz-animation-delay: -5s;
+        }
+
+        .caixa__card.cc__4 {
+            background: linear-gradient(-229deg, #cf91ff, #5782F5);
+            -webkit-animation-delay: -4s;
+            -moz-animation-delay: -4s;
+        }
+
+        .caixa__card.cc__5 {
+            background: linear-gradient(-229deg, #642B73, #C6426E);
+            -webkit-animation-delay: -3s;
+            -moz-animation-delay: -3s;
+        }
+
+        .caixa__card.cc__6 {
+            background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
+            -webkit-animation-delay: -2s;
+            -moz-animation-delay: -2s;
+        }
+
+        .caixa__card.cc__7 {
+            background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+            -webkit-animation-delay: -1s;
+            -moz-animation-delay: -1s;
+        }
+
+        .caixa__card.cc__8 {
+            background: linear-gradient(-229deg, #1472ff, #A8EB12);
+        }
+    </style>
+</head>
+
   
-  .menu-logo {
-    line-height: 0;
-    margin: 0 20px;
-  }
-  
-  .menu-logo img {
-    max-height: 40px;
-    max-width: 100px;
-    flex-shrink: 0;
-  }
-  
-  .menu-container a {
-    text-decoration: none;
-    color: #232323;
-    transition: color 0.3s ease;
-  }
-  
-  .menu-container a:hover {
-    color: #00C6A7;
-  }
-  
-  .menu-container input {
-    display: block;
-    width: 35px;
-    height: 25px;
-    margin: 0;
-    position: absolute;
-    cursor: pointer;
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
-    -webkit-touch-callout: none;
-  }
-  
-  /* Burger menu */
-  .menu-container span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #cdcdcd;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
-  }
-  
-  .menu-container span:first-child {
-    transform-origin: 0% 0%;
-  }
-  
-  .menu-container span:nth-child(3) {
-    transform-origin: 0% 100%;
-  }
-  
-  .menu-container input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(3px,-1px);
-    background: #232323;
-  }
-  
-  .menu-container input:checked ~ span:nth-child(4) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-  
-  .menu-container input:checked ~ span:nth-child(3) {
-    transform: rotate(-45deg) translate(-5px,11px);
-  }
-  
-  .menu ul {
-    list-style: none;
-  }
-  
-  .menu li {
-    padding: 10px 0;
-    font-size: 22px;
-  }
-  
-  /* mobile styles */
-  @media only screen and (max-width: 767px) { 
-    .menu-container {
-      flex-direction: column;
-      align-items: flex-end;
-    }
-    
-    .menu-logo {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  
-    .menu-logo img {
-      max-height: 30px;
-    }
-  
-    .menu {
-      position: absolute;
-      box-sizing: border-box;
-      width: 300px;
-      right: -300px;
-      top: 0;
-      margin: -20px;
-      padding: 75px 50px 50px;
-      background: #cdcdcd;
-      -webkit-font-smoothing: antialiased;
-      /* to stop flickering of text in safari */
-      transform-origin: 0% 0%;
-      transform: translateX(0%);
-      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-    }
-  
-    .menu-container input:checked ~ .menu {
-      transform: translateX(-100%);
-    }
-  }
-  
-  /* desktop styles */
-  @media only screen and (min-width: 768px) { 
-    .menu-container {
-      width: 100%;
-    }
-  
-    .menu-container a {
-      color: #cdcdcd;
-    }
-  
-    .menu-container input {
-      display: none;
-    }
-  
-    /* Burger menu */
-    .menu-container span {
-      display: none;
-    }
-  
-    .menu {
-      position: relative;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .menu ul {
-      display: flex;
-      padding: 0;
-    }
-  
-    .menu li {
-      padding: 0 20px;
-    }
-  }

@@ -253,10 +253,12 @@
     box-shadow: -60vmin 0 8.495723856974282vmin currentColor;
 }
 .background .globe:nth-child(25):nth-child(25) {
-    color: #ff0000;
+background-image: url(kép/favicon.ico);
+color: #00DBDE;
     top: 88%;
     left: 11%;
     animation-duration: 37s;
+    background-repeat: no-repeat;
     animation-delay: -13s;
     transform-origin: 4vw -11vh;
     box-shadow: -60vmin 0 7.878178441098896vmin currentColor;

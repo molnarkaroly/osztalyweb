@@ -254,6 +254,7 @@
 }
 .background .globe:nth-child(25):nth-child(25) {
 background-image: url(kép/logoszbiPG.png);
+background-position: center;
 color: #00DBDE;
     top: 88%;
     left: 11%;

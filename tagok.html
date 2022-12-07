@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>10.i</title>
     <link rel="icon" type="image/x-icon" href="/kép/favicon.ico">
-
+    <link rel='stylesheet' href='https://cdn.rawgit.com/angular/bower-material/v0.10.0/angular-material.css'>
+    <script src="tagok.js"></script> 
 </head>
 <body>
 
@@ -60,8 +61,16 @@
 
 
 <span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span><span class="globe"></span>
-
-
+<div ng-controller="AppCtrl as appCtrl" class="gridListdemoResponsiveUsage" ng-app="MyApp">
+  <md-content layout-padding="">
+    <md-grid-list md-cols-gt-md="12" md-cols-sm="3" md-cols-md="8" md-row-height-gt-md="1:1" md-row-height="4:3" md-gutter-gt-md="16px" md-gutter-gt-sm="8px" md-gutter="4px">
+      <md-grid-tile ng-repeat="tile in appCtrl.colorTiles" ng-style="{
+            'background': tile.color
+          }" md-colspan-gt-sm="{{tile.colspan}}" md-rowspan-gt-sm="{{tile.rowspan}}">
+      </md-grid-tile>
+    </md-grid-list>
+  </md-content>
+</div>
 
 
 </div>

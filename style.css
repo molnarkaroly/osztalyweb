@@ -469,6 +469,7 @@ body {
   
     .menu {
       position: absolute;
+      border-radius: 5%;
       box-sizing: border-box;
       width: 300px;
       right: -300px;

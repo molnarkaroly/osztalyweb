@@ -11,6 +11,7 @@
     left: 0;
     background: #003261;
     overflow: hidden;
+    padding-bottom: 100%;
 }
 
 .background span {
@@ -655,3 +656,15 @@ body {
     background: linear-gradient(-229deg, #1472ff, #A8EB12);
 }
 
+.style1 {
+    border-color: #00e44c;
+border-width: 1px;
+}
+.style2 {
+border-width: 1px;
+background-color: #c0c0c0;
+}
+.style3 {
+border-width: 1px;
+background-color: #ffffff;
+}

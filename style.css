@@ -655,6 +655,7 @@ body {
 .caixa__card.cc__8 {
     background: linear-gradient(-229deg, #1472ff, #A8EB12);
 }
+<<<<<<< HEAD
 section.cms-boxes .cms-boxes-outer {
   text-align: left;
   margin-bottom: 6px;
@@ -708,3 +709,18 @@ section.cms-boxes .cms-built {
 section.cms-boxes .cms-security, section.cms-boxes .cms-documentation {
   background-color: rgb(66, 16, 88);
 }
+=======
+
+.style1 {
+    border-color: #00e44c;
+border-width: 1px;
+}
+.style2 {
+border-width: 1px;
+background-color: #c0c0c0;
+}
+.style3 {
+border-width: 1px;
+background-color: #ffffff;
+}
+>>>>>>> e36b7b6d4418f66b4bba13b01ea2b66d408ab994

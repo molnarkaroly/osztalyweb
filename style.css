@@ -419,14 +419,19 @@ background-color: #ffffff;
   .dicsszind{
     font-size: 20px; 
     font-weight:bold
+
   }
   .dicsind{
-    background-color: #00DBDE;
+    background-color: #00b8bb;
+    padding-bottom:10px;
+    padding-top:20px;
+
+
   }
   .indexkép{
     height: 100%;
     width: 100%;
-    padding-bottom:250px ;
+    padding-bottom:20px;
   }
 
   .carrosel {
@@ -439,6 +444,10 @@ background-color: #ffffff;
 }
 }
 
-
-
+@media only screen  and (max-width: 1545px) {
+  /* A következő stílusok csak akkor lesznek érvényesek, ha a képernyőméret 486px és 1545px között van */
+  .carrosel {
+    display: none;
+  }
+}
 

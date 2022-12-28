@@ -1,6 +1,6 @@
 let docTitle = document.title;
 window.addEventListener("blur", () => {
-document.title = "Gyere vissza :( ";
+document.title = "Ne hagyj itt! Félek egyedül! ";
 })
 
 window.addEventListener("focus", ()=> {

@@ -432,9 +432,13 @@ background-color: #ffffff;
   .carrosel {
     width: 400px;
     height: 2px;
-    top: 155px;
     position: relative;
+    top: 155px;
     margin: 0 auto;
     z-index: 30;
 }
 }
+
+
+
+

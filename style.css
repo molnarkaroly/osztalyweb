@@ -610,4 +610,27 @@ td.text-right {
 
 }
 
+#divora {
+  /*background-color: red;*/
+  transform: translateY(33%);
+}
 
+#time {
+  font-family: 'digital-7', monospace;
+  font-size: 10vw;
+  text-align: center;
+  text-shadow: 0px 0px 20px;
+}
+/*
+#date {
+  font-family: 'Eczar', serif;
+  font-size: 5vmin;
+  text-align: center;
+  text-shadow: 0px 0px 20px blue;
+}
+*/
+/* @media only screen and (max-width: 500px){
+  #time {font-size: 2em;}
+  #date {font-size: 1em;}
+} */
+@import 'https://fonts.googleapis.com/css?family=Nova+Mono|Eczar';

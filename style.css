@@ -443,7 +443,7 @@ section.cms-boxes .cms-security, section.cms-boxes .cms-documentation {
 }
 
 @media only screen  and (max-width: 1545px) {
-  /* A következő stílusok csak akkor lesznek érvényesek, ha a képernyőméret 486px és 1545px között van */
+  
   .carrosel {
     display: none;
   }
@@ -629,8 +629,70 @@ td.text-right {
   text-shadow: 0px 0px 20px blue;
 }
 */
-/* @media only screen and (max-width: 500px){
-  #time {font-size: 2em;}
-  #date {font-size: 1em;}
-} */
+
 @import 'https://fonts.googleapis.com/css?family=Nova+Mono|Eczar';
+
+
+* { margin: 0; padding: 0; font-size: 18px; }
+
+
+
+
+
+.diagramm {
+  width: 100%;
+  
+  margin: 3rem 0;
+}
+
+.diagramm__saulen {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/5121/vfed-linienraster-flex.svg);
+  background-color: rgb(44, 40, 40);
+  background-size: contain;
+  height: 50vw;
+  
+}
+
+.diagramm__saulen__dings {
+  background-color: rgb(206, 0, 0);
+  width: 10%;
+  margin: 0 1px;
+}
+
+.diagramm__legenden {
+  display: flex;
+  justify-content: center;
+  border-top: 3px solid rgb(4, 0, 250);
+  padding-top: 1rem;
+  background-color: #312f2f;
+
+}
+.diagramm__legenden__dings {
+  width: 10%;
+  margin: 0 2px;
+  text-align: center;
+  color: #08dfe2;
+
+}
+
+@media only screen  and (min-width: 800px) {
+
+  .diagramm__saulen{
+    height: 30vw;
+
+  
+  }
+
+}
+
+
+
+h1{
+  text-align: center;
+  font-family: 'Impact';
+  font-weight: bolder;
+}

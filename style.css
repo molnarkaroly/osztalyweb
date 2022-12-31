@@ -44,9 +44,9 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  background: linear-gradient(45deg, #d82b2b, #5900ff, #1513a3, #00ffea, #3cff00, #a6ff00, #bc0101, #ff0202);
+  background: linear-gradient(45deg,  #14006e, #660000);
   background-size: 400% 400%;
-  animation: BackgroundGradient 20s ease infinite;
+  animation: BackgroundGradient 10s ease infinite;
   color: #cdcdcd;
   padding: 20px;
   z-index: 1;

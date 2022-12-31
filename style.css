@@ -637,7 +637,7 @@ td.text-right {
 
 
 .diagramm {
-  width: 90%;
+  width: 100%;
   
   margin: 3rem 0;
 }
@@ -672,6 +672,7 @@ td.text-right {
   width: 30%; /* 10% volt*/
   margin: 0 2px;
   text-align: center;
+  font-size: small;
   color: #08dfe2;
 
 }
@@ -694,9 +695,3 @@ h1{
   font-weight: bolder;
 }
 
-
-.grid-containerr {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 1fr = 1 oszlop szélessége */
-  grid-template-rows: 50px 50px; /* 50px = 1 sor magassága */
-}

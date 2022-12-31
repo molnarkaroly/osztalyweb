@@ -26,7 +26,6 @@
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   margin: 0;
-  background: var(--cor-background);
   outline: none;
 }
 
@@ -133,7 +132,7 @@
   border: none;
   background-color: var(--cor-botao-normal);
   color: var(--cor-branco);
-  cursor: pointer;
+  cursor: url(kép/cursor.png), auto;
   border-right: 1px solid var(--cor-borda-botoes);
   border-top: 1px solid var(--cor-borda-botoes);
   user-select: none;

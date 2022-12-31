@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap");
 
 :root {
-  --cor-background: #ecf0f3;
   --cor-branco: #ffffff;
   --cor-sombra-padrao: rgba(0, 0, 0, 0.16);
   --cor-botao-normal: #78797a;
@@ -48,8 +47,8 @@
 .conteudo .calculadora .opcoes__janela {
   display: flex;
   position: absolute;
-  top: 7px;
   left: 7px;
+  top: 7px;
   background-color: transparent;
   column-gap: 7px;
 }

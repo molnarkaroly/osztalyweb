@@ -34,6 +34,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+
 }
 
 .conteudo .calculadora {
@@ -41,6 +43,7 @@
   position: relative;
   border-radius: 10px;
   box-shadow: 5px 5px 12px var(--cor-sombra-padrao);
+
 }
 
 .conteudo .calculadora .opcoes__janela {
@@ -68,6 +71,7 @@
   line-height: 11px;
   font-size: 10px;
   cursor: pointer;
+
 }
 
 .conteudo .calculadora .opcoes__janela div:nth-child(1) {
@@ -115,11 +119,13 @@
   margin: auto;
   margin-top: 20px;
   font-weight: 200;
+
 }
 
 .conteudo .calculadora .conteudo__botoes input::placeholder {
   color: var(--cor-branco);
   opacity: 1; /* para firefox */
+  
 }
 
 .conteudo .calculadora .conteudo__botoes a {
@@ -136,6 +142,7 @@
   border-right: 1px solid var(--cor-borda-botoes);
   border-top: 1px solid var(--cor-borda-botoes);
   user-select: none;
+
 }
 
 .conteudo .calculadora .conteudo__botoes a:hover {

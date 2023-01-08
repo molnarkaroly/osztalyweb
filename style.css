@@ -438,32 +438,14 @@ section.cms-boxes .cms-security, section.cms-boxes .cms-documentation {
     z-index: 30;
 }
 }
-/*
+
 @media only screen  and (max-width: 1545px) {
   
   .carrosel {
     display: none;
   }
-}*/
-@media only screen  and (max-width: 1545px) {
-  
-  .carrosel {
-    top: 40px;
-  }
 }
 
-@media only screen  and (max-width: 1285px) {
-  
-  .carrosel {
-    top: 1px;
-  }
-}
-
-@media only screen  and (max-width: 1145px) {
-  
-  .carrosel {
-    display: none;
-  }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
 

@@ -620,6 +620,14 @@ td.text-right {
   transform: translateY(33%);
 }
 
+@font-face {
+  font-family: 'digital-7';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(digital-7.woff2);
+} 
+
 #time {
   font-family: 'digital-7', monospace;
   font-size: 10vw;
@@ -1571,4 +1579,5 @@ button::after {
 .gitlog{
   height: 10%
 }
+
 

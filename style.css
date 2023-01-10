@@ -1618,10 +1618,7 @@ section.cms-boxes .cms-features {
   background-color: #363d58;
   background-size: cover;
 }
-section.cms-boxes .boxes-align {
-  display: table-cell;
-  vertical-align: middle;
-}
+
 section.cms-boxes .small-box, section.cms-boxes .large-box {
   max-width: 350px;
   margin: 0 auto;
@@ -1664,6 +1661,5 @@ section.cms-boxes .cms-boxes-outer {
   margin-bottom: 6px;
   padding: 0 3px;
 }
-
 
 

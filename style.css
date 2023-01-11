@@ -162,12 +162,13 @@ body {
     top: 0;
     margin: -20px;
     padding: 75px 50px 50px;
-    background: #cdcdcd;
+    background: #57fff7;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
     transform-origin: 0% 0%;
     transform: translateX(0%);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    border-radius: 10%;
   }
 
   .menu-container input:checked ~ .menu {

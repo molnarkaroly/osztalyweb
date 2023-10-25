@@ -1,1 +1,1 @@
-https://molnarkaroly0.github.io/osztalyweb/index.html
+https://molnarkaroly.github.io/osztalyweb/index.html
